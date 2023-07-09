@@ -5,6 +5,17 @@
       "bundler": "metro"
     },
     "name": "james-expo-app",
-    "slug": "james-expo-app"
+    "slug": "james-expo-app",
+    "extra": {
+      "eas": {
+        "projectId": "1f146c87-9be0-4a49-a552-207b83577eab"
+      }
+    },
+    "android": {
+      "package": "com.dragonfruitjam.jamesexpoapp"
+    },
+    "ios": {
+      "bundleIdentifier": "com.dragonfruitjam.jamesexpoapp"
+    }
   }
 }
