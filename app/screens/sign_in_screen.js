@@ -1,13 +1,14 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
 import { Link } from "expo-router";
 
-export default function SignUpScreen() {
+export default function SignUpScreen({promptAsync}) {
   return (
     <View style={styles.container}>
       <View style={styles.main}>
         <Text style={styles.title}>Sign In</Text>
         <Text style={styles.subtitle}>This is the page to sign in</Text>
         <Link href="/">Home</Link>
+        <Button onPress={() =>promptAsync()}>Sign Up</Button>
       </View>
     </View>
   );

@@ -18,11 +18,20 @@ export default function App() {
 const [userInfo, setUserInfo] = React.useState();
 const [request, response, promptAsync] = Google.useAuthRequest({
   iosClientId: "10475186476-j9og2ufke9lnfbrpnvpj58ar7mmurb6t.apps.googleusercontent.com",
-  androidClientId: "10475186476-ijusocl2k5v5mtctgpcb5t08mo7qj50a.apps.googleusercontent.com"
-})
+  androidClientId: "10475186476-ijusocl2k5v5mtctgpcb5t08mo7qj50a.apps.googleusercontent.com",
+  webClientId: "10475186476-p6idp6sv38v93m88p2pedvkh93gbkvl4.apps.googleusercontent.com",
+});
+
+React.useEffect(() => {
+  if (response?.type == "success"){
+    const { id_token } = response.params;
+    const credential = GoogleAuthProvider.credential(id_token)
+    signInWithCredential(auth, credential)
+  }
+}, [response]);
 
   return (
-    < SignUpScreen />
+    < SignUpScreen promptAsync={promptAsync}/>
   );
 }
 
