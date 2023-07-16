@@ -10,8 +10,8 @@ const firebaseConfig = {
   storageBucket: "charismatic-cultists.appspot.com",
   messagingSenderId: "517004977600",
   appId: "1:517004977600:web:8dad2dfd5ec8be5442d425"
-};
+}
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
+const auth = getAuth(app)
