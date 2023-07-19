@@ -1,4 +1,4 @@
-package com.jamesexpoapp;
+package com.dragonfruitjam.jamesexpoapp;
 
 import android.app.Application;
 import android.content.res.Configuration;

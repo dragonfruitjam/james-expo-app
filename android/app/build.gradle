@@ -113,13 +113,13 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.jamesexpoapp"
+    namespace 'com.dragonfruitjam.jamesexpoapp'
     defaultConfig {
-        applicationId "com.jamesexpoapp"
+        applicationId 'com.dragonfruitjam.jamesexpoapp'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
     }
 
     splits {

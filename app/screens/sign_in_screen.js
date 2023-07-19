@@ -1,5 +1,6 @@
-import { Button, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { Link } from "expo-router";
+import Button from "../components/Button";
 
 export default function SignUpScreen({promptAsync}) {
   return (
@@ -8,7 +9,7 @@ export default function SignUpScreen({promptAsync}) {
         <Text style={styles.title}>Sign In</Text>
         <Text style={styles.subtitle}>This is the page to sign in</Text>
         <Link href="/">Home</Link>
-        <Button onPress={() =>promptAsync()}>Sign Up</Button>
+        <Button label="Sign In" onPress={() =>promptAsync()}/>
       </View>
     </View>
   );

@@ -1,4 +1,4 @@
-package com.jamesexpoapp;
+package com.dragonfruitjam.jamesexpoapp;
 
 import android.os.Build;
 import android.os.Bundle;
